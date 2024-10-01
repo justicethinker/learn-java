@@ -41,6 +41,8 @@ public class arithmeticOperators {
         // Performing modulus operation (a % b) to get the remainder and storing the result
         result = a % b;
         // Displaying the result of the modulus operation (remainder)
-        System.out.println("Modulus Result: " + result);
+        System.out.println("Remainder Result: " + result);
+
+        scanner.close();
     }
 }

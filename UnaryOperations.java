@@ -1,10 +1,15 @@
 package operators; // Package for demonstrating various arithmetic and unary operations
 
+import java.util.Scanner;
+
 public class UnaryOperations {
     public static void main(String[] args) {
         int var1, var2;
 
-        var1 = 50; // Assign 50 to var1
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the value for var1");
+        var1 = scanner.nextInt();
 
         var2 = -var1; // Unary minus operator to invert the sign of var1
         System.out.println("The var =" + var1 + ", var2 = " + var2);

@@ -1,4 +1,4 @@
-package operators;
+
 
 //import Scanner to take input from user
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class RelationalOperators {
     public static void main(String[] args) {
         // Create a Scanner object to read input from the user
-        Scanner scanner = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
 
         int num1, num2;
         

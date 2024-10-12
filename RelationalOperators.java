@@ -1,31 +1,48 @@
 package operators;
 
+//import Scanner to take input from user
+import java.util.Scanner;
+
 public class RelationalOperators {
     public static void main(String[] args) {
-        boolean result;  // Variable to store the result of relational operations
+        // Create a Scanner object to read input from the user
+        Scanner scanner = new Scanner (System.in);
+
+        int num1, num2;
         
-        // Check if 10 is equal to 10 (equality operator)
-        result = (10 == 10); // true when the left operand is exactly equal to the right operand
+        boolean result;  // Variable to store the result of relational operations
+
+       
+        // Prompt the user to enter the first number
+        System.out.print("Enter the first number: ");
+        num1 = input.nextInt();  // Read the first integer input
+ 
+        // Prompt the user to enter the second number
+        System.out.print("Enter the second number: ");
+        num2 = input.nextInt();  // Read the second integer input
+        
+        // Check if num1 is equal to num2 (equality operator)
+        result = (num1 == num2); // true when the left operand is exactly equal to the right operand
         System.out.println("The result is " + result);  // Output: true
 
-        // Check if 5 is less than 5
-        result = (5 < 5);  // false since 5 is not less than 5
+        // Check if num1 is less than num2
+        result = (num1 < num2);  
         System.out.println("The result is " + result);  // Output: false
 
-        // Check if 5 is less than or equal to 5
-        result = (5 <= 5);  // true since 5 is equal to 5
+        // Check if num1 is less than or equal to 5
+        result = (num1<= num2 ); 
         System.out.println("The result is " + result);  // Output: true
 
-        // Check if 10 is greater than 5
-        result = (10 > 5);  // true since 10 is greater than 5
+        // Check if num1 is greater than num2 
+        result = (num1 > num2);  
         System.out.println("The result is " + result);  // Output: true
 
-        // Check if 10 is greater than or equal to 5
-        result = (10 >= 5);  // true since 10 is greater than 5
+        // Check if num1 is greater than or equal to num2 
+        result = (num1 >= num2);  
         System.out.println("The result is " + result);  // Output: true
 
-        // Check if 2 is not equal to 2
-        result = (2 != 2);  // false since 2 is equal to 2
+        // Check if num1  is not equal to num2 
+        result = (num1 != num2);  
         System.out.println("The result is " + result);  // Output: false
     }
 }
